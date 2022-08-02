@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="shadow-sm p-3 mb-1 bg-body rounded">{{message}}</div>
+    </div>
+    <div class="row addinfo">
+        <div class="col">
+            <app-newuser (userCreated)=onUserAdded($event)></app-newuser>
+        </div>
+        <div class="col">
+            <app-newtraining (trainingCreated)=onTrainingAdded($event)></app-newtraining>
+        </div>
+    </div>
+    <div class="row">
+        <h5 class="mt-3">Search All Training:</h5>
+        <app-alltraining></app-alltraining>
+    </div>
+</div>
